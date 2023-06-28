@@ -56,15 +56,55 @@
 		824434B32A4AAE0D009FED83 /* Mortage_Optim */ = {
 			isa = PBXGroup;
 			children = (
-				824434B42A4AAE0D009FED83 /* AppDelegate.swift */,
-				824434B62A4AAE0D009FED83 /* SceneDelegate.swift */,
-				824434B82A4AAE0D009FED83 /* ViewController.swift */,
-				824434BA2A4AAE0D009FED83 /* Main.storyboard */,
-				824434BD2A4AAE0E009FED83 /* Assets.xcassets */,
-				824434BF2A4AAE0E009FED83 /* LaunchScreen.storyboard */,
-				824434C22A4AAE0E009FED83 /* Info.plist */,
+				824434C82A4CB216009FED83 /* App */,
+				824434C92A4CB289009FED83 /* ViewControllers */,
+				824434CB2A4CB331009FED83 /* Models */,
+				824434CA2A4CB2E1009FED83 /* StoryBoards */,
+				824434CC2A4CB380009FED83 /* Resources */,
 			);
 			path = Mortage_Optim;
+			sourceTree = "<group>";
+		};
+		824434C82A4CB216009FED83 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				824434B42A4AAE0D009FED83 /* AppDelegate.swift */,
+				824434B62A4AAE0D009FED83 /* SceneDelegate.swift */,
+				824434C22A4AAE0E009FED83 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		824434C92A4CB289009FED83 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				824434B82A4AAE0D009FED83 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		824434CA2A4CB2E1009FED83 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				824434BA2A4AAE0D009FED83 /* Main.storyboard */,
+				824434BF2A4AAE0E009FED83 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		824434CB2A4CB331009FED83 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		824434CC2A4CB380009FED83 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				824434BD2A4AAE0E009FED83 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,11 +330,13 @@
 				DEVELOPMENT_TEAM = 6T8ACJHK4P;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Mortage_Optim/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,11 +360,13 @@
 				DEVELOPMENT_TEAM = 6T8ACJHK4P;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Mortage_Optim/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
