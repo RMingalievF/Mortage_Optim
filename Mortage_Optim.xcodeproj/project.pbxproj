@@ -13,6 +13,7 @@
 		824434BC2A4AAE0D009FED83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 824434BA2A4AAE0D009FED83 /* Main.storyboard */; };
 		824434BE2A4AAE0E009FED83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 824434BD2A4AAE0E009FED83 /* Assets.xcassets */; };
 		824434C12A4AAE0E009FED83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 824434BF2A4AAE0E009FED83 /* LaunchScreen.storyboard */; };
+		824434CE2A4CBE2A009FED83 /* CalculationMortage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824434CD2A4CBE2A009FED83 /* CalculationMortage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		824434BD2A4AAE0E009FED83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		824434C02A4AAE0E009FED83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		824434C22A4AAE0E009FED83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		824434CD2A4CBE2A009FED83 /* CalculationMortage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationMortage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		824434CB2A4CB331009FED83 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				824434CD2A4CBE2A009FED83 /* CalculationMortage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				824434B92A4AAE0D009FED83 /* ViewController.swift in Sources */,
+				824434CE2A4CBE2A009FED83 /* CalculationMortage.swift in Sources */,
 				824434B52A4AAE0D009FED83 /* AppDelegate.swift in Sources */,
 				824434B72A4AAE0D009FED83 /* SceneDelegate.swift in Sources */,
 			);
@@ -329,7 +333,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6T8ACJHK4P;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Mortage_Optim/Info.plist;
+				INFOPLIST_FILE = Mortage_Optim/App/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -344,6 +348,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "MingalievRuslan.Mortage-Optim";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -359,7 +366,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6T8ACJHK4P;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Mortage_Optim/Info.plist;
+				INFOPLIST_FILE = Mortage_Optim/App/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -374,6 +381,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "MingalievRuslan.Mortage-Optim";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
