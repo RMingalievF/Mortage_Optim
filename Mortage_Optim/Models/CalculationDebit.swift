@@ -5,15 +5,15 @@
 //  Created by Руслан Мингалиев on 10.07.2023.
 //
 
-import Foundation
+//import Foundation
 
 class Deposit {
     
     let startDeposit: Float
-    let duratuion: Int
-    let capitalizationPeriod: Float
+    let duratuion: Int //на какой срок вклад в месяцах
+    let capitalizationPeriod: Float //Когда происходит капитализация, ежемесячно, квартально, в год
     let interestRateDeposit: Float  // Процентная ставка
-    let overCach: Float
+    let overCach: Float //Пополнение вклада
     
     //ЕЖЕМЕСЯЧНАЯ_СТАВКА
    private var monthlyinterestRateDeposit: Float{

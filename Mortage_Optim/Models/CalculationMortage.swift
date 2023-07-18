@@ -3,15 +3,8 @@
 //  Mortage_Optim
 //
 //  Created by Руслан Мингалиев on 28.06.2023.
-//ОБЩАЯ_СТАВКА = (1 + ЕЖЕМЕСЯЧНАЯ_СТАВКА) ^ СРОК_ИПОТЕКИ_МЕСЯЦЕВ
-// ЕЖЕМЕСЯЧНЫЙ_ПЛАТЕЖ = СУММА_КРЕДИТА * ЕЖЕМЕСЯЧНАЯ_СТАВКА * ОБЩАЯ_СТАВКА / (ОБЩАЯ_СТАВКА - 1)
-
-//ПРОЦЕНТНАЯ_ЧАСТЬ = ОСТАТОК_ДОЛГА * ЕЖЕМЕСЯЧНАЯ_СТАВКА
-
-//ОСНОВНАЯ_ЧАСТЬ = ЕЖЕМЕСЯЧНЫЙ_ПЛАТЕЖ - ПРОЦЕНТНАЯ_ЧАСТЬ
 
 class Mortgage {
-    
     
     let mortgageDebit: Float // Сумма ипотеки
     //var mortgageBalance: Float // Остаток по ипотеке
@@ -69,7 +62,7 @@ class Mortgage {
     
    private func calculateListMonthlyPayment() -> [Int: [Float]]{
         var listPayment = [Int: [Float]]()
-        let listPaymentSorted =  [Int: [Float]]()
+       // let listPaymentSorted =  [Int: [Float]]()
        
         var mortgageBalance = mortgageDebit
         for numberPayment in 1...mortgageTermMonths {
@@ -77,7 +70,7 @@ class Mortgage {
             percentPart.round(.toNearestOrAwayFromZero)
             var mainPart = monthlyPayment - percentPart
             mainPart.round(.toNearestOrAwayFromZero)
-            var recult = percentPart + mainPart
+            let recult = percentPart + mainPart
             
             listPayment[numberPayment] = [mortgageBalance, percentPart, mainPart, recult]
             
