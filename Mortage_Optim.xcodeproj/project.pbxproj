@@ -16,6 +16,8 @@
 		824434CE2A4CBE2A009FED83 /* CalculationMortage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824434CD2A4CBE2A009FED83 /* CalculationMortage.swift */; };
 		824434D02A5BECE9009FED83 /* CalculationDebit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824434CF2A5BECE9009FED83 /* CalculationDebit.swift */; };
 		8284F2342A5BF01600A24F34 /* CreateDateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8284F2332A5BF01600A24F34 /* CreateDateList.swift */; };
+		8284F2362A718A2700A24F34 /* DebitStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8284F2352A718A2700A24F34 /* DebitStoryboard.storyboard */; };
+		8284F2382A718BA100A24F34 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8284F2372A718BA100A24F34 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		824434CD2A4CBE2A009FED83 /* CalculationMortage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationMortage.swift; sourceTree = "<group>"; };
 		824434CF2A5BECE9009FED83 /* CalculationDebit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationDebit.swift; sourceTree = "<group>"; };
 		8284F2332A5BF01600A24F34 /* CreateDateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDateList.swift; sourceTree = "<group>"; };
+		8284F2352A718A2700A24F34 /* DebitStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DebitStoryboard.storyboard; sourceTree = "<group>"; };
+		8284F2372A718BA100A24F34 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				824434B82A4AAE0D009FED83 /* ViewController.swift */,
+				8284F2372A718BA100A24F34 /* LoginViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -93,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				824434BA2A4AAE0D009FED83 /* Main.storyboard */,
+				8284F2352A718A2700A24F34 /* DebitStoryboard.storyboard */,
 				824434BF2A4AAE0E009FED83 /* LaunchScreen.storyboard */,
 			);
 			path = StoryBoards;
@@ -176,6 +182,7 @@
 			files = (
 				824434C12A4AAE0E009FED83 /* LaunchScreen.storyboard in Resources */,
 				824434BE2A4AAE0E009FED83 /* Assets.xcassets in Resources */,
+				8284F2362A718A2700A24F34 /* DebitStoryboard.storyboard in Resources */,
 				824434BC2A4AAE0D009FED83 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8284F2382A718BA100A24F34 /* LoginViewController.swift in Sources */,
 				824434B92A4AAE0D009FED83 /* ViewController.swift in Sources */,
 				824434CE2A4CBE2A009FED83 /* CalculationMortage.swift in Sources */,
 				824434B52A4AAE0D009FED83 /* AppDelegate.swift in Sources */,
