@@ -1,19 +1,22 @@
 //
-//  ViewController.swift
+//  DebitParameterVC.swift
 //  Mortage_Optim
 //
-//  Created by Руслан Мингалиев on 27.06.2023.
+//  Created by Руслан Мингалиев on 08.08.2023.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class DebitParameterVC: UIViewController {
 
+   
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
-
+    
 
 }
-
