@@ -20,7 +20,7 @@ class Deposit {
         interestRateDeposit/12/100
     }
     
-    var test: [Int: [Float]]{
+    var test: [[Float]]{
         calculateDeposit(capitalizationPeriod: capitalizationPeriod)
     }
     
@@ -34,15 +34,15 @@ class Deposit {
         }
         
         
-    private func calculateDeposit(capitalizationPeriod: Float) -> [Int: [Float]] {
-            var listDeposit = [Int: [Float]]()
+    private func calculateDeposit(capitalizationPeriod: Float) -> [[Float]] {
+            var listDeposit = [[Float]]()
         var newDebitBalance = startDeposit
         switch capitalizationPeriod {
         case 12:
-            for numberCapital in 1...duratuion {
+            for _ in 1...duratuion {
                let newDeposit = newDebitBalance * monthlyinterestRateDeposit
                 newDebitBalance = newDebitBalance + newDeposit
-                listDeposit[numberCapital] = [newDebitBalance, newDeposit]
+                listDeposit.append([newDebitBalance, newDeposit])
             }
         default:
             break

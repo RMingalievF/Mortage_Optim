@@ -15,10 +15,10 @@
 		824434CE2A4CBE2A009FED83 /* CalculationMortage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824434CD2A4CBE2A009FED83 /* CalculationMortage.swift */; };
 		824434D02A5BECE9009FED83 /* CalculationDebit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824434CF2A5BECE9009FED83 /* CalculationDebit.swift */; };
 		8284F2342A5BF01600A24F34 /* CreateDateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8284F2332A5BF01600A24F34 /* CreateDateList.swift */; };
-		8284F2362A718A2700A24F34 /* DebitStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8284F2352A718A2700A24F34 /* DebitStoryboard.storyboard */; };
 		8284F2382A718BA100A24F34 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8284F2372A718BA100A24F34 /* LoginViewController.swift */; };
 		8284F23A2A8223F400A24F34 /* DebitParameterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8284F2392A8223F400A24F34 /* DebitParameterVC.swift */; };
 		8284F23F2A822F1E00A24F34 /* UITableViewDebitParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8284F23E2A822F1E00A24F34 /* UITableViewDebitParameter.swift */; };
+		8284F2412A8A1D5800A24F34 /* ListOfPayments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8284F2402A8A1D5800A24F34 /* ListOfPayments.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,10 +32,10 @@
 		824434CD2A4CBE2A009FED83 /* CalculationMortage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationMortage.swift; sourceTree = "<group>"; };
 		824434CF2A5BECE9009FED83 /* CalculationDebit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationDebit.swift; sourceTree = "<group>"; };
 		8284F2332A5BF01600A24F34 /* CreateDateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDateList.swift; sourceTree = "<group>"; };
-		8284F2352A718A2700A24F34 /* DebitStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DebitStoryboard.storyboard; sourceTree = "<group>"; };
 		8284F2372A718BA100A24F34 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8284F2392A8223F400A24F34 /* DebitParameterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DebitParameterVC.swift; path = Mortage_Optim/ViewControllers/DebitParameterVC/DebitParameterVC.swift; sourceTree = SOURCE_ROOT; };
 		8284F23E2A822F1E00A24F34 /* UITableViewDebitParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewDebitParameter.swift; sourceTree = "<group>"; };
+		8284F2402A8A1D5800A24F34 /* ListOfPayments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfPayments.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				824434BA2A4AAE0D009FED83 /* Main.storyboard */,
-				8284F2352A718A2700A24F34 /* DebitStoryboard.storyboard */,
 				824434BF2A4AAE0E009FED83 /* LaunchScreen.storyboard */,
 			);
 			path = StoryBoards;
@@ -112,6 +111,7 @@
 				824434CD2A4CBE2A009FED83 /* CalculationMortage.swift */,
 				824434CF2A5BECE9009FED83 /* CalculationDebit.swift */,
 				8284F2332A5BF01600A24F34 /* CreateDateList.swift */,
+				8284F2402A8A1D5800A24F34 /* ListOfPayments.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -193,7 +193,6 @@
 			files = (
 				824434C12A4AAE0E009FED83 /* LaunchScreen.storyboard in Resources */,
 				824434BE2A4AAE0E009FED83 /* Assets.xcassets in Resources */,
-				8284F2362A718A2700A24F34 /* DebitStoryboard.storyboard in Resources */,
 				824434BC2A4AAE0D009FED83 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,6 +210,7 @@
 				824434B52A4AAE0D009FED83 /* AppDelegate.swift in Sources */,
 				8284F23F2A822F1E00A24F34 /* UITableViewDebitParameter.swift in Sources */,
 				8284F2342A5BF01600A24F34 /* CreateDateList.swift in Sources */,
+				8284F2412A8A1D5800A24F34 /* ListOfPayments.swift in Sources */,
 				824434D02A5BECE9009FED83 /* CalculationDebit.swift in Sources */,
 				824434B72A4AAE0D009FED83 /* SceneDelegate.swift in Sources */,
 			);
