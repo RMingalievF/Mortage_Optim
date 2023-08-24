@@ -19,7 +19,7 @@ struct ListOfPaymentsDebit {
 
 extension ListOfPaymentsDebit {
     
-   static var deposit = Deposit(startDeposit: 1000.0, duratuion: 12, capitalizationPeriod: 12, interestRateDeposit: 10, overCach: 0)
+//   static var deposit = Deposit(startDeposit: 1000.0, duratuion: 12, capitalizationPeriod: 12, interestRateDeposit: 10, overCach: 0)
     
     
 }

@@ -17,8 +17,9 @@
 		8284F2342A5BF01600A24F34 /* CreateDateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8284F2332A5BF01600A24F34 /* CreateDateList.swift */; };
 		8284F2382A718BA100A24F34 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8284F2372A718BA100A24F34 /* LoginViewController.swift */; };
 		8284F23A2A8223F400A24F34 /* DebitParameterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8284F2392A8223F400A24F34 /* DebitParameterVC.swift */; };
-		8284F23F2A822F1E00A24F34 /* UITableViewDebitParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8284F23E2A822F1E00A24F34 /* UITableViewDebitParameter.swift */; };
 		8284F2412A8A1D5800A24F34 /* ListOfPayments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8284F2402A8A1D5800A24F34 /* ListOfPayments.swift */; };
+		8292B05D2A975991009DAB43 /* CastomizationClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8292B05C2A975991009DAB43 /* CastomizationClass.swift */; };
+		8292B05F2A978F22009DAB43 /* UITableViewDebitParameterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8292B05E2A978F22009DAB43 /* UITableViewDebitParameterCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +35,9 @@
 		8284F2332A5BF01600A24F34 /* CreateDateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDateList.swift; sourceTree = "<group>"; };
 		8284F2372A718BA100A24F34 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8284F2392A8223F400A24F34 /* DebitParameterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DebitParameterVC.swift; path = Mortage_Optim/ViewControllers/DebitParameterVC/DebitParameterVC.swift; sourceTree = SOURCE_ROOT; };
-		8284F23E2A822F1E00A24F34 /* UITableViewDebitParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewDebitParameter.swift; sourceTree = "<group>"; };
 		8284F2402A8A1D5800A24F34 /* ListOfPayments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfPayments.swift; sourceTree = "<group>"; };
+		8292B05C2A975991009DAB43 /* CastomizationClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastomizationClass.swift; sourceTree = "<group>"; };
+		8292B05E2A978F22009DAB43 /* UITableViewDebitParameterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewDebitParameterCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				824434CF2A5BECE9009FED83 /* CalculationDebit.swift */,
 				8284F2332A5BF01600A24F34 /* CreateDateList.swift */,
 				8284F2402A8A1D5800A24F34 /* ListOfPayments.swift */,
+				8292B05C2A975991009DAB43 /* CastomizationClass.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -128,7 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				8284F2392A8223F400A24F34 /* DebitParameterVC.swift */,
-				8284F23E2A822F1E00A24F34 /* UITableViewDebitParameter.swift */,
+				8292B05E2A978F22009DAB43 /* UITableViewDebitParameterCell.swift */,
 			);
 			path = DebitParameterVC;
 			sourceTree = "<group>";
@@ -206,9 +209,10 @@
 			files = (
 				8284F2382A718BA100A24F34 /* LoginViewController.swift in Sources */,
 				824434CE2A4CBE2A009FED83 /* CalculationMortage.swift in Sources */,
+				8292B05D2A975991009DAB43 /* CastomizationClass.swift in Sources */,
 				8284F23A2A8223F400A24F34 /* DebitParameterVC.swift in Sources */,
+				8292B05F2A978F22009DAB43 /* UITableViewDebitParameterCell.swift in Sources */,
 				824434B52A4AAE0D009FED83 /* AppDelegate.swift in Sources */,
-				8284F23F2A822F1E00A24F34 /* UITableViewDebitParameter.swift in Sources */,
 				8284F2342A5BF01600A24F34 /* CreateDateList.swift in Sources */,
 				8284F2412A8A1D5800A24F34 /* ListOfPayments.swift in Sources */,
 				824434D02A5BECE9009FED83 /* CalculationDebit.swift in Sources */,
