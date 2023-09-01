@@ -27,6 +27,7 @@ class DebitParameterVC: UIViewController {
     private let calculateDate = CalculateDate()
     var depositTest = [[Float]]()
     var dates = [String]()
+    var startDate: (String, Date) = ("", Date())
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,39 +39,28 @@ class DebitParameterVC: UIViewController {
         datePicker.preferredDatePickerStyle = .wheels
        
         dateToOpenedTextField.inputView = datePicker
-        dateToOpenedTextField.text = dateFormat(date: Date())
-
+        startDate = dateFormat(date: Date())
+        dateToOpenedTextField.text = startDate.0
         
         // Do any additional setup after loading the view.
     }
     
     @objc func dateChange(datePicker: UIDatePicker){
-        dateToOpenedTextField.text = dateFormat(date: datePicker.date)
+        let dateFormat = dateFormat(date: datePicker.date)
         
+        dateToOpenedTextField.text = dateFormat.dateString
     }
     
-    private func dateFormat(date: Date) -> String {
+    private func dateFormat(date: Date) -> (dateString: String, dateDate: Date) {
         let formatter = DateFormatter()
         formatter.dateFormat = "dd.MM.yyyy"
         
-        return formatter.string(from: date)
+        let dateString = formatter.string(from: date)
+        let dateDate = formatter.date(from: dateString)
+        
+        return (dateString, dateDate!)
     }
     
-    private func startDateString(dateString: String) -> Date {
-        let dateFormater = DateFormatter()
-        dateFormater.dateFormat = "dd.MM.yyyy"
-        let firstDayDebit = dateFormater.date(from: dateString)
-        
-        return firstDayDebit!
-    }
-    
-    private func finishDateString(dateString: Date) -> Date {
-        let dateFormater = DateFormatter()
-        dateFormater.dateFormat = "dd.MM.yyyy"
-        let firstDayDebit = dateFormater.date(from: dateString)
-        
-        return firstDayDebit!
-    }
     
     @IBAction func calcculationDebitButton(_ sender: UIButton) {
         deposit.startDeposit = Float(depositTextField.text!) ?? 0
@@ -79,9 +69,8 @@ class DebitParameterVC: UIViewController {
         deposit.overCach = Float(overCashTextField.text!) ?? 0
         depositTest = deposit.calculateDeposit(capitalizationPeriod: .month)
         
-        dates = calculateDate.calculateQtyMonthsBetween(from: startDateString(dateString: dateToOpenedTextField.text!),
-                                                        to: finishDateString(dateString: <#T##Date#>))
-        
+        dates = calculateDate.calculateQtyMonthsBetween(from: startDate.1, to: deposit.duratuion)
+
         tableViewListPayment.reloadData()
         print(dates)
     }
@@ -102,11 +91,10 @@ extension DebitParameterVC: UITableViewDelegate, UITableViewDataSource{
         let listDate = dates[indexPath.row]
 
         cell.dateToPayment.text = String(listDate)
-        cell.deposit.text = String(listPayment.first!)
-        cell.rateToPayment.text = String(listPayment.last!)
+        cell.deposit.text = String(format:"%.02f", listPayment.first!)
+        cell.rateToPayment.text = String(format:"%.02f", listPayment.last!)
     print(cell)
     return cell
     }
 }
-
 

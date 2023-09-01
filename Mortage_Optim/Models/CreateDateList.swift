@@ -21,8 +21,11 @@ class CalculateDate {
 //    let lastDayDebit = dateFormater.date(from: "31.03.2024")
     
     
-    func calculateQtyMonthsBetween(from: Date, to: Date) -> [String]{
-        let monthBetween = Calendar.current.dateComponents([.month], from: from, to: to).month!
+    func calculateQtyMonthsBetween(from: Date, to: Int) -> [String]{
+        let date = from
+        let lastDayDebit = Calendar.current.date(byAdding: .month, value: to, to: date)!
+        
+        let monthBetween = Calendar.current.dateComponents([.month], from: from, to: lastDayDebit).month!
         var dates = [String]()
         for i in 0...monthBetween {
             let dateToPayment = Calendar.current.date(byAdding: .month, value: i, to: from)
