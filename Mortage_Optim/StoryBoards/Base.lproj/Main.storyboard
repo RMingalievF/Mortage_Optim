@@ -185,7 +185,7 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="QyU-Tm-p05">
+                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="QyU-Tm-p05">
                                         <rect key="frame" x="0.0" y="106" width="374" height="34"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="468-EB-vdp">

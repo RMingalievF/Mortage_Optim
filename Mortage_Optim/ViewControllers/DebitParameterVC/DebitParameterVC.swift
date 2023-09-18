@@ -22,15 +22,19 @@ class DebitParameterVC: UIViewController {
     
 
     
-    
+    private let capitalization = PickerViewCapitalization()
     private var deposit = Deposit()
     private let calculateDate = CalculateDate()
     var depositTest = [[Float]]()
     var dates = [String]()
     var startDate: (String, Date) = ("", Date())
+    var selectedElement: String?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        choiceUiElement()
+        createToolBar()
         
         let datePicker = UIDatePicker()
         datePicker.datePickerMode = .date
@@ -43,6 +47,38 @@ class DebitParameterVC: UIViewController {
         dateToOpenedTextField.text = startDate.0
         
         // Do any additional setup after loading the view.
+    }
+    
+    private func choiceUiElement() {
+        let elementPicker = UIPickerView()
+        elementPicker.delegate = self
+        
+        capitalizationTextField.inputView = elementPicker
+        
+    }
+    
+    private func createToolBar() {
+        let toolBar = UIToolbar()
+        toolBar.sizeToFit()
+        
+        let doneButton = UIBarButtonItem(title: "Done",
+                                         style: .plain,
+                                         target: self,
+                                         action: #selector(dismissKeyboard))
+        toolBar.setItems([doneButton], animated: true)
+        toolBar.isUserInteractionEnabled = true
+        
+        capitalizationTextField.inputAccessoryView = toolBar
+        
+        toolBar.tintColor = .black
+        toolBar.barTintColor = .blue
+        
+    }
+    
+    
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
     
     @objc func dateChange(datePicker: UIDatePicker){
@@ -98,3 +134,27 @@ extension DebitParameterVC: UITableViewDelegate, UITableViewDataSource{
     }
 }
 
+extension DebitParameterVC: UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        capitalization.capitalization.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        capitalization.capitalization[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        
+        selectedElement = capitalization.capitalization[row]
+        capitalizationTextField.text = selectedElement
+        
+        
+        
+        
+    }
+}
