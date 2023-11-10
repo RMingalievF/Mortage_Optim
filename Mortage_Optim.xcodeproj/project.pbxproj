@@ -14,6 +14,9 @@
 		824434C12A4AAE0E009FED83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 824434BF2A4AAE0E009FED83 /* LaunchScreen.storyboard */; };
 		824434CE2A4CBE2A009FED83 /* CalculationMortage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824434CD2A4CBE2A009FED83 /* CalculationMortage.swift */; };
 		824434D02A5BECE9009FED83 /* CalculationDebit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824434CF2A5BECE9009FED83 /* CalculationDebit.swift */; };
+		827952C72AFE37A70045C525 /* DebitModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827952C62AFE37A70045C525 /* DebitModelData.swift */; };
+		827952CA2AFE45EA0045C525 /* DebitPaymentProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827952C92AFE45EA0045C525 /* DebitPaymentProtocol.swift */; };
+		827952CC2AFE4A180045C525 /* DebitPaymentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827952CB2AFE4A180045C525 /* DebitPaymentModel.swift */; };
 		8284F2342A5BF01600A24F34 /* CreateDateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8284F2332A5BF01600A24F34 /* CreateDateList.swift */; };
 		8284F2382A718BA100A24F34 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8284F2372A718BA100A24F34 /* LoginViewController.swift */; };
 		8284F23A2A8223F400A24F34 /* DebitParameterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8284F2392A8223F400A24F34 /* DebitParameterVC.swift */; };
@@ -33,6 +36,9 @@
 		824434C22A4AAE0E009FED83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		824434CD2A4CBE2A009FED83 /* CalculationMortage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationMortage.swift; sourceTree = "<group>"; };
 		824434CF2A5BECE9009FED83 /* CalculationDebit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationDebit.swift; sourceTree = "<group>"; };
+		827952C62AFE37A70045C525 /* DebitModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebitModelData.swift; sourceTree = "<group>"; };
+		827952C92AFE45EA0045C525 /* DebitPaymentProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebitPaymentProtocol.swift; sourceTree = "<group>"; };
+		827952CB2AFE4A180045C525 /* DebitPaymentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebitPaymentModel.swift; sourceTree = "<group>"; };
 		8284F2332A5BF01600A24F34 /* CreateDateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDateList.swift; sourceTree = "<group>"; };
 		8284F2372A718BA100A24F34 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8284F2392A8223F400A24F34 /* DebitParameterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DebitParameterVC.swift; path = Mortage_Optim/ViewControllers/DebitParameterVC/DebitParameterVC.swift; sourceTree = SOURCE_ROOT; };
@@ -72,9 +78,11 @@
 		824434B32A4AAE0D009FED83 /* Mortage_Optim */ = {
 			isa = PBXGroup;
 			children = (
+				827952C82AFE45AC0045C525 /* Protocol */,
 				824434C82A4CB216009FED83 /* App */,
 				824434C92A4CB289009FED83 /* ViewControllers */,
 				824434CB2A4CB331009FED83 /* Models */,
+				827952C52AFE36F20045C525 /* BisnessLogical */,
 				824434CA2A4CB2E1009FED83 /* StoryBoards */,
 				824434CC2A4CB380009FED83 /* Resources */,
 			);
@@ -96,6 +104,7 @@
 			children = (
 				8284F23D2A822E7600A24F34 /* DebitParameterVC */,
 				8284F2372A718BA100A24F34 /* LoginViewController.swift */,
+				8292B05C2A975991009DAB43 /* CastomizationClass.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -112,12 +121,9 @@
 		824434CB2A4CB331009FED83 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				824434CD2A4CBE2A009FED83 /* CalculationMortage.swift */,
-				824434CF2A5BECE9009FED83 /* CalculationDebit.swift */,
-				8284F2332A5BF01600A24F34 /* CreateDateList.swift */,
-				8284F2402A8A1D5800A24F34 /* ListOfPayments.swift */,
-				8292B05C2A975991009DAB43 /* CastomizationClass.swift */,
 				8292B0602A9D327C009DAB43 /* PickerViewClass.swift */,
+				827952C62AFE37A70045C525 /* DebitModelData.swift */,
+				827952CB2AFE4A180045C525 /* DebitPaymentModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -128,6 +134,25 @@
 				824434BD2A4AAE0E009FED83 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		827952C52AFE36F20045C525 /* BisnessLogical */ = {
+			isa = PBXGroup;
+			children = (
+				824434CF2A5BECE9009FED83 /* CalculationDebit.swift */,
+				824434CD2A4CBE2A009FED83 /* CalculationMortage.swift */,
+				8284F2402A8A1D5800A24F34 /* ListOfPayments.swift */,
+				8284F2332A5BF01600A24F34 /* CreateDateList.swift */,
+			);
+			path = BisnessLogical;
+			sourceTree = "<group>";
+		};
+		827952C82AFE45AC0045C525 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				827952C92AFE45EA0045C525 /* DebitPaymentProtocol.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		8284F23D2A822E7600A24F34 /* DebitParameterVC */ = {
@@ -214,12 +239,15 @@
 				824434CE2A4CBE2A009FED83 /* CalculationMortage.swift in Sources */,
 				8292B05D2A975991009DAB43 /* CastomizationClass.swift in Sources */,
 				8284F23A2A8223F400A24F34 /* DebitParameterVC.swift in Sources */,
+				827952CA2AFE45EA0045C525 /* DebitPaymentProtocol.swift in Sources */,
+				827952CC2AFE4A180045C525 /* DebitPaymentModel.swift in Sources */,
 				8292B0612A9D327C009DAB43 /* PickerViewClass.swift in Sources */,
 				8292B05F2A978F22009DAB43 /* UITableViewDebitParameterCell.swift in Sources */,
 				824434B52A4AAE0D009FED83 /* AppDelegate.swift in Sources */,
 				8284F2342A5BF01600A24F34 /* CreateDateList.swift in Sources */,
 				8284F2412A8A1D5800A24F34 /* ListOfPayments.swift in Sources */,
 				824434D02A5BECE9009FED83 /* CalculationDebit.swift in Sources */,
+				827952C72AFE37A70045C525 /* DebitModelData.swift in Sources */,
 				824434B72A4AAE0D009FED83 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
